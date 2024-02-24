@@ -1,3 +1,5 @@
+import { ArchiveRestore, Camera, Image, Scan, StarHalf } from "lucide-react";
+
 export const navLinks = [
     {
       label: "Home",
@@ -125,21 +127,24 @@ export const navLinks = [
       title: "Restore Image",
       subTitle: "Refine images by removing noise and imperfections",
       config: { restore: true },
-      icon: "image.svg",
+      // icon: "image.svg",
+      icon: Image
     },
     removeBackground: {
       type: "removeBackground",
       title: "Background Remove",
       subTitle: "Removes the background of the image using AI",
       config: { removeBackground: true },
-      icon: "camera.svg",
+      // icon: "camera.svg",
+      icon:Camera
     },
     fill: {
       type: "fill",
       title: "Generative Fill",
       subTitle: "Enhance an image's dimensions using AI outpainting",
       config: { fillBackground: true },
-      icon: "stars.svg",
+      // icon: "stars.svg",
+      icon:StarHalf 
     },
     remove: {
       type: "remove",
@@ -148,7 +153,8 @@ export const navLinks = [
       config: {
         remove: { prompt: "", removeShadow: true, multiple: true },
       },
-      icon: "scan.svg",
+      // icon: "scan.svg",
+      icon: Scan
     },
     recolor: {
       type: "recolor",
@@ -158,6 +164,7 @@ export const navLinks = [
         recolor: { prompt: "", to: "", multiple: true },
       },
       icon: "filter.svg",
+      // icon:
     },
   };
   
